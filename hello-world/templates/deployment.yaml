@@ -14,6 +14,7 @@ spec:
       labels:
         {{- include "hello-world.selectorLabels" . | nindent 8 }}
         test: label
+        test1: label
     spec:
       serviceAccountName: {{ include "hello-world.serviceAccountName" . }}
       containers:
